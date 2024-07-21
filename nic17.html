@@ -13,12 +13,40 @@
 </head>
 <body>
   <div id="map"></div>
-  <div>
+  <div class="controls">
     <label for="locator">Locator (Drag to Move): </label>
     <input type="text" id="locator" readonly>
     <button onclick="addImaginaryHospitals()">Add Imaginary Hospitals</button>
     <button onclick="resetSession()">Reset Session</button>
   </div>
+<style>
+.controls {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 10px;
+    }
+    .controls label {
+      margin-bottom: 10px;
+    }
+    .controls input {
+      width: 300px;
+      height: 30px;
+      font-size: 16px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    .controls button {
+      width: 200px;
+      height: 40px;
+      font-size: 16px;
+      margin: 5px;
+      background-color: #90EE90; /* Light green color */
+      border: none;
+      border-radius: 5px;
+    }
+    </style>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
   <script>
